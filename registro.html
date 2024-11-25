@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+   <link rel="stylesheet" href="registro.css">
+   <link rel="shortcut icon" href="images/osito.png" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+
+            <a href="#" class="logo"><img src="images/osito.png" height="100px=" width="80px" ></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="slider.html">productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="agradecimientos.html">agradecimientos</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </header>
+
+
+      
+
+    <div class="form-content">
+        <h2>
+            Enviar su formulario
+        </h2>
+        <form action="https://formsubmit.co/gzvalerin905@gmail.com" method="POST" >
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Correo electronico</label>
+            <input type="email" name="email" id="email">
+
+            <label for="subjet">dirección</label>
+            <input type="text" name="subjet" id="subjet">
+
+
+            <label for="coments">pedido</label>
+            <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
+
+            <label for="payment-method">Método de Pago</label>
+            <select name="payment_method" id="payment-method" required>
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="Bancolombia">Bancolombia</option>
+                <option value="Daviplata">Daviplata</option>
+                <option value=" Nequi"> Nequi</option>
+                <option value="Ahorro a la mano">Ahorro a la mano</option>
+            </select>
+           <input class="btn" type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5502/index.html" >
+
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+
+</body>
+</html>
